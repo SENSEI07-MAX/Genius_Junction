@@ -1,73 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html>
 <head>
-<meta charset="UTF-8">
-<title>THE GENIUS JUNCTION - Home</title>
-<style>
-    body{
-        margin:0;
-        font-family:Arial, sans-serif;
-        background: url('https://images.pexels.com/photos/414535/pexels-photo-414535.jpeg') no-repeat center/cover;
-        color: #fff;
-    }
-    header{
-        text-align:center;
-        padding:50px 20px;
-        background:rgba(0,0,0,0.6);
-    }
-    nav a{
-        margin:0 15px;
-        color:#fff;
-        text-decoration:none;
-        font-weight:bold;
-        font-size:18px;
-    }
-    .content{
-        text-align:center;
-        margin-top:80px;
-        background:rgba(0,0,0,0.6);
-        padding:40px;
-        border-radius:10px;
-        width:70%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    button{
-        padding:12px 25px;
-        margin:10px;
-        border:none;
-        border-radius:5px;
-        font-size:18px;
-        cursor:pointer;
-        background:#ffcc00;
-        color:#000;
-        font-weight:bold;
-    }
-</style>
+    <title>Genius Junction - Home</title>
+    <style>
+        body{
+            background:url('https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg') no-repeat center/cover;
+            margin:0;
+            font-family:Arial;
+            color:white;
+        }
+        header{
+            text-align:center;
+            padding:20px;
+            background:rgba(0,0,0,0.5);
+        }
+        nav a{
+            margin:15px;
+            color:white;
+            text-decoration:none;
+            font-size:20px;
+        }
+        .box{
+            background:white;
+            color:black;
+            max-width:700px;
+            margin:50px auto;
+            padding:30px;
+            border-radius:15px;
+        }
+        button{
+            padding:10px 20px;
+            font-size:18px;
+            cursor:pointer;
+        }
+    </style>
 </head>
 <body>
-
 <header>
-    <h1>THE GENIUS JUNCTION</h1>
-    <h3>Your Gateway to Lifelong Learning</h3>
+    <h1>GENIUS JUNCTION</h1>
     <nav>
         <a href="index.html">Home</a>
-         <a href="Sdg-4.html">Sdg-4</a>
         <a href="about.html">About</a>
+        <a href="sdg4.html">SDG-4</a>
         <a href="courses.html">Courses</a>
         <a href="features.html">Features</a>
         <a href="contact.html">Contact</a>
     </nav>
-</header>
-
-<div class="content">
-    <h2>Quality Education for Everyone</h2>
-    <p>Free and affordable courses designed for all age groups — from young kids to senior learners, from 
-       beginners to professionals. Empowering minds, changing lives.</p>
-
-    <button onclick="window.location.href='courses.html'">Get Started</button>
-    <button onclick="window.location.href='contact.html'">Join Free</button>
-</div>
-
-</body>
+</header><div class="box">
+    <h2>Welcome to Genius Junction</h2>
+    <p>Genius Junction is your gateway to learning, awareness, and growth. We focus on SDG-4 — ensuring quality education for all, promoting equal learning opportunities, and building a brighter future for every learner.</p>
+    <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg" width="100%" style="border-radius:10px; margin:15px 0;">
+    <p>Our platform highlights the importance of education in reducing poverty, improving skills, and empowering communities. Explore our courses, features, and SDG-4 information to understand how education can transform the world.</p>
+    <button onclick="msg()">Click for a Message</button>
+</div><script>
+function msg(){
+    alert("Welcome to Genius Junction! Let's learn and grow together.");
+}
+</script></body>
 </html>
+
