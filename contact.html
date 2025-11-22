@@ -1,61 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
 <title>THE GENIUS JUNCTION - Contact</title>
+
 <style>
     body{
-        background:url('https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg') no-repeat center/cover;
         margin:0;
         font-family:Arial;
-        color:#fff;
+        background:url('https://images.pexels.com/photos/261628/pexels-photo-261628.jpeg') no-repeat center/cover;
+        color:white;
     }
     header{
         background:rgba(0,0,0,0.6);
-        padding:40px;
         text-align:center;
+        padding:40px;
     }
     nav a{
         margin:0 15px;
-        color:#fff;
-        text-decoration:none;
+        color:white;
         font-size:18px;
+        text-decoration:none;
     }
-    .container{
+    .contact-box{
+        width:50%;
+        margin:auto;
+        margin-top:50px;
         background:rgba(0,0,0,0.6);
-        margin:50px;
         padding:40px;
         border-radius:10px;
     }
-    .social-box{
-        width:250px;
-        background:#222;
-        padding:20px;
-        margin:15px;
-        border-radius:10px;
-        text-align:center;
-        display:inline-block;
-    }
-    .form-box{
-        margin-top:40px;
-    }
     input, textarea{
-        width:90%;
+        width:100%;
         padding:10px;
         margin:10px 0;
         border:none;
         border-radius:5px;
     }
     button{
-        background:#ffcc00;
-        padding:10px 20px;
+        padding:12px 20px;
         border:none;
-        border-radius:5px;
-        cursor:pointer;
+        background:#ffcc00;
         font-weight:bold;
+        cursor:pointer;
+        border-radius:5px;
     }
 </style>
-
 </head>
 
 <body>
@@ -64,32 +53,36 @@
     <h1>CONTACT US</h1>
     <nav>
         <a href="index.html">Home</a>
-        <a href="Sdg-4.html">Sdg-4</a>
         <a href="about.html">About</a>
+        <a href="sdg4.html">SDG-4</a>
         <a href="courses.html">Courses</a>
         <a href="features.html">Features</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<div class="container">
-    <h2>Stay Connected</h2>
+<div class="contact-box">
+    <h2>Send Us a Message</h2>
 
-    <div class="social-box">📘 Facebook</div>
-    <div class="social-box">📸 Instagram</div>
-    <div class="social-box">🐦 Twitter</div>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="msg" placeholder="Your Message"></textarea>
 
-    <div class="form-box">
-        <h3>Sign Up / Enroll Now</h3>
-        <form>
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
-            <textarea placeholder="Message / Query (Optional)" rows="4"></textarea>
-            <button>Submit</button>
-        </form>
-    </div>
-
+    <button onclick="submitForm()">Submit</button>
 </div>
+
+<script>
+function submitForm(){
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if(name === "" || email === ""){
+        alert("Please fill in all fields!");
+    } else {
+        alert("Thank you! Your message was sent.");
+    }
+}
+</script>
 
 </body>
 </html>
